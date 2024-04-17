@@ -1,8 +1,13 @@
 replicaCount: 3
 
 image:
-  repository: nginx
+  repository: "https://us-central1-docker.pkg.dev/prime-freedom-418105/artemis/artemis"
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "1.0.0"
+
+
+  service: 
+  type: ClusterIP
+  port: 5000
 
